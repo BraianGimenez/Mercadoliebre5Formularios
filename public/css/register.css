@@ -8,6 +8,10 @@ main{
       flex-direction: column;
       justify-content: center;
 }
+input:invalid {
+      border: 2px red;
+
+}
 
 .register-form {
     

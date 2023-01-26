@@ -35,7 +35,7 @@
         <nav class="lista2">
         <ul class="lista-inferior">
             <li><a href="register">Creá tu cuenta <i class="fa-regular fa-id-card"></i></a></li>
-            <li><a href="">Ingresá <i class="fa-solid fa-right-to-bracket"></i></a></li>
+            <li><a href="login">Ingresá <i class="fa-solid fa-right-to-bracket"></i></a></li>
             <li><a href="">Mis compras <i class="fa-solid fa-cart-arrow-down"></i></a></li>
         </ul>
        
@@ -46,15 +46,15 @@
 
 </header>
       <main class="register">
-        <form action="register.html" method="POST" class="register-form">
+        <form action="register" method="POST" class="register-form">
               <div class="control-form">
-                    <input type="text" name="nombre" id="nombre" placeholder="Nombre y apellido" class="control" required>
+                    <input type="text" name="nombre" id="nombre" placeholder="Nombre y apellido" class="control" required minlength="6" maxlength="8">
               </div>
               <div class="control-form">
-                    <input type="text" name="usuario" id="usuario" placeholder="Nombre de usuario" class="control">
+                    <input type="text" name="usuario" id="usuario" placeholder="Nombre de usuario" class="control" required minlength="6" maxlength="8">
               </div>
               <div class="control-form">
-                    <input type="email" name="email" id="email" placeholder="E-mail" class="control">
+                    <input type="email" name="email" id="email" placeholder="E-mail" class="control" required>
               </div>
               <div class="control-form">
                     <h4>Fecha de Nacimiento<h4>
@@ -101,7 +101,7 @@
                       <label for="vida-sana">Vida sana</label>
                 </div>
                 <div class="send-btn">
-                  <button type="submit">Enviar</button>
+                  <button type="submit"><a href="/">Enviar</a></button>
                 </div>
           </div>
     </form>

@@ -250,6 +250,7 @@ footer span {
         justify-content: space-around;
         width: 500px;
         max-width: 500px;
+        padding-top: 20px;
     }
     nav.lista2 ul{
         display: flex;
